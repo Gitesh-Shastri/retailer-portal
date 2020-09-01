@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Document</title>
+    <meta charset="utf-8">
+   
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" href="./dashboard.css">
+</head>
+<body class="container" style="padding-bottom: 3%;">
+  
+    <div>
+      <div class="content-wrapper">
+        <div class="card" style="width: 98%; margin-top: 20px; margin-left: 20px;">
+          <div class="card-body">
+            <h2 style="padding-left: 20px;">Order Stats</h2>
+             <!-- Content Header (Page header) -->
+          <div class="row" style="margin-top: 10px;">
+            <div class="col-xs-3 col-md-3 col-lg-3 col-sm-3">
+              <div class="card" style="background-color: aquamarine;">
+                <!-- Total orders -->
+                <div class="card-body">
+                  <i class="fa fa-plus-square" aria-hidden="true" style="font-size: 20px;">  Total Orders</i>
+                  
+                  <h5 class="card-title" style="padding-left: 30px;">10</h5>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-3 col-md-3 col-lg-3 col-sm-3">
+              <!-- approved -->
+              <div class="card" style="" >
+                <div class="card-body" style=" background-color: rgb(124, 124, 241)">
+                
+                  <i class="fa fa-check-square" aria-hidden="true" style="font-size: 20px;">  Approved</i>
+                 
+                  <h5 class="card-title" style="padding-left: 30px;">10</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-3 col-md-3 col-lg-3 col-sm-3">
+              <!-- pending -->
+              <div class="card" style="background-color: rgb(167, 114, 218);">
+                <div class="card-body">
+                  <i class="fa fa-clock-o" aria-hidden="true" style="font-size: 20px;">  Pending</i>
+                  <h5 class="card-title" style="padding-left: 30px;">10</h5>
+                 
+                 
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-3 col-md-3 col-lg-3 col-sm-3">
+              <!-- cancelled -->
+              <div class="card" style="background-color: rgb(190, 81, 81);">
+                <div class="card-body">
+                  <i class="fa fa-times" aria-hidden="true" style="font-size: 20px;">  Cancelled</i>
+                  <h5 class="card-title" style="padding-left: 30px;">10</h5>
+                 
+                </div>
+              </div>
+            </div>
+  
+          </div>
+        <!-- ./header portion ends -->
+            
+      </div> 
+          </div>
+        </div>
+       
+          <!-- Main content -->
+      <div class="row">
+              <div class="col-xs-9 col-md-9 col-lg-9 col-sm-9">
+                <div class="row" style="margin-top: 20px; ">
+                  <div class="col-xs-6 col-md-6 col-lg-6 col-sm-6">
+                    <!--Lifetime sales-->
+                    <div class="card" style=" margin-left: 20px; ">
+                      <div class="card-body">
+                        <h5 class="card-title">Lifetime Sales</h5>
+                        <div class="row">
+                          <div class="col-xs-6 col-md-6 col-lg-6 col-sm-6" style="padding-top: 30px;">
+                           <!-- Total sales amount -->
+                            <div class="card" style="margin-left: 15px;">
+                              <div class="card-body">
+                                total Sales
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-xs-6 col-md-6 col-lg-6 col-sm-6" >
+                            <!-- total profits card -->
+                            <div class="card" style="margin-right: 15px; margin-top: 30px; background-color: rgb(90, 176, 216);">
+                              <div class="card-body" >
+                                total profits
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                       
+                        <p class="pos">Date</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-md-6 col-lg-6 col-sm-6" >
+                    <!-- Recent orders -->
+                    <div class="card" style="">
+                      <div class="card-body p-0">
+                        <h5 class="card-title" style="padding-left: 7%;">Recent Orders</h5>                
+                        <a href="#" class="card-link">View All</a>
+                    <!-- table of recent orders -->
+                        <table class="table table-sm table-borderless" >
+                          <thead>
+                            <tr>
+                              <th scope="col">Date</th>
+                              <th scope="col">Order Id</th>
+                              <th scope="col">Status</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td scope="col">12-8-2019</td>
+                              <td scope="col">348161</td>
+                              <td scope="col">Dispatched</td>
+                            </tr>
+                            <tr>
+                              <td scope="col">12-8-2019</td>
+                              <td scope="col">348161</td>
+                              <td scope="col">Dispatched</td>
+                            </tr>
+                            <tr>
+                              <td scope="col">12-8-2019</td>
+                              <td scope="col">348161</td>
+                              <td scope="col">Dispatched</td>
+                            </tr>
+                            <tr>
+                              <td scope="col">12-8-2019</td>
+                              <td scope="col">348161</td>
+                              <td scope="col">Dispatched</td>
+                            </tr>
+                           
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" style="margin-top: 10px;">
+                  <div class="col-xs-6 col-md-6 col-lg-6 col-sm-6">
+                    <!-- brand card -->
+                    <div class="card" style=" margin-left: 20px; ">
+                      <div class="card-body">
+                        <h5 class="card-title" style="color: green;">Top 5 selling brands</h5>
+                          <!-- TOP 5 brands TABLE -->
+                          <table class="table table-sm table-borderless">
+                            <thead>
+                              <tr style="text-align: center;">
+                                <th >Rank</th>
+                                <th >ProductName</th>
+                                <th>Number of units sold</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr style="text-align: center;">
+                                <td style="text-align: center;">1</td>
+                                <td style="text-align: center;">Cipla</td>
+                                <td style="text-align: center;">23567</td>
+                              </tr>
+                              <tr style="text-align: center;">
+                                <td >1</td>
+                                <td >Cipla</td>
+                                <td >23567</td>
+                              </tr>
+                              <tr style="text-align: center;">
+                                <td>1</td>
+                                <td>Cipla</td>
+                                <td>23567</td>
+                              </tr>
+                              <tr style="text-align: center;">
+                                <td>1</td>
+                                <td>Cipla</td>
+                                <td>23567</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        <h5 class="card-title" style="color: rgb(216, 79, 79);">Bottom 5 selling brands</h5>
+                        <!-- bottom 5 brands table -->
+                        <table class="table table-sm table-borderless">
+                          <thead>
+                            <tr style="text-align: center;">
+                              <th>Rank</th>
+                              <th>ProductName</th>
+                              <th>Number of units sold</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr style="text-align: center;">
+                              <td>1</td>
+                              <td>Cipla</td>
+                              <td>23567</td>
+                            </tr>
+                            <tr style="text-align: center;">
+                              <td>1</td>
+                              <td>Cipla</td>
+                              <td>23567</td>
+                            </tr>
+                            <tr style="text-align: center;">
+                              <td>1</td>
+                              <td>Cipla</td>
+                              <td>23567</td>
+                            </tr>
+                            <tr style="text-align: center;">
+                              <td>1</td>
+                              <td>Cipla</td>
+                              <td>23567</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <a href="#" class="card-link">View All</a>
+                        <a href="#" class="bottom card-link">View All</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-md-6 col-lg-6 col-sm-6">
+                    <!-- card for products -->
+                    <div class="card" style="">
+                      <div class="card-body ">
+                        <h5 class="card-title" style="color: green;">Top 5 products</h5>
+                        <!-- Top 5 products table -->
+                        <table class="table table-sm table-borderless">
+                          <thead>
+                            <tr style="text-align: center;">
+                              <th>Rank</th>
+                              <th>Product Name</th>
+                              <th>Number of units sold</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr style="text-align: center;">
+                              <td>1</td>
+                              <td>Cipla</td>
+                              <td>23567</td>
+                            </tr>
+                            <tr style="text-align: center;">
+                              <td>1</td>
+                              <td>Cipla</td>
+                              <td>23567</td>
+                            </tr>
+                            <tr style="text-align: center;">
+                              <td>1</td>
+                              <td>Cipla</td>
+                              <td>23567</td>
+                            </tr>
+                            <tr style="text-align: center;">
+                              <td>1</td>
+                              <td>Cipla</td>
+                              <td>23567</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        
+                        <h5 class="card-title" style="color: rgb(216, 79, 79);">Bottom 5 products</h5>
+                        <!-- bottom 5 products table -->
+                        <table class="table table-sm table-borderless">
+                          
+                            <tr style="text-align: center;">
+                              <th>Rank</th>
+                              <th>Product Name</th>
+                              <th>Number of units sold</th>
+                            </tr>
+                         
+                            <tr style="text-align: center;">
+                              <td>1</td>
+                              <td>Cipla</td>
+                              <td>23567</td>
+                            </tr>
+                            <tr style="text-align: center;">
+                              <td>1</td>
+                              <td>Cipla</td>
+                              <td>23567</td>
+                            </tr>
+                            <tr style="text-align: center;">
+                              <td>1</td>
+                              <td>Cipla</td>
+                              <td>23567</td>
+                            </tr>
+                            <tr style="text-align: center;">
+                              <td>1</td>
+                              <td>Cipla</td>
+                              <td>23567</td>
+                            </tr>
+                          
+                        </table>
+                        <a href="#" class="card-link">View All</a>
+                        <a href="#" class="bottom card-link">View All</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              
+              
+              
+              
+              <div class="col-xs-3 col-md-3 col-lg-3 col-sm-3" style="margin-top: 20px;">
+                <!-- card for mini statements -->
+                <div class="card" style="height: 715px;">
+                  <div class="card-body">
+                    <h5 class="card-title">Mini Statement</h5>
+                    <hr>
+                    <div class="row" style="padding-left: 7%;">Outstanding Credit:</div>
+                    <div class="row" style="padding-left: 7%;">Month Bill:</div>
+                    <hr>
+                    <table class="table table-sm table-borderless">
+                      <thead>
+                        <tr>
+                          <th scope="col">Date/Remarks</th>
+                          
+                          <th scope="col">Amount</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>08/08/2020
+                            <p style="font-size: 10px;">Purchase Order: 24561</p>
+                          </td>
+                          <td>25000</td>
+                        </tr>
+                        <tr>
+                          <td>08/08/2020
+                            <p style="font-size: 10px;">Credit Paid</p>
+                          </td>
+                          <td>25000</td>
+                        </tr>
+                        <tr>
+                          <td>08/08/2020
+                            <p style="font-size: 10px;">Purchase Order: 24561</p>
+                          </td>
+                          <td>25000</td>
+                        </tr>
+                        <tr>
+                          <td>08/08/2020
+                            <p style="font-size: 10px;">Credit Paid</p>
+                          </td>
+                          <td>25000</td>
+                        </tr>
+                        <tr>
+                          <td>08/08/2020
+                            <p style="font-size: 10px;">Purchase Order: 24561</p>
+                          </td>
+                          <td>25000</td>
+                        </tr>
+                        <tr>
+                          <td>08/08/2020
+                            <p style="font-size: 10px;">Credit Paid</p>
+                          </td>
+                          <td>25000</td>
+                        </tr>
+                        <tr>
+                          <td>08/08/2020
+                            <p style="font-size: 10px;">Credit Paid</p>
+                          </td>
+                          <td>25000</td>
+                        </tr>
+                        <tr>
+                          <td>08/08/2020
+                            <p style="font-size: 10px;">Credit Paid</p>
+                          </td>
+                          <td>25000</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <a href="#" class="card-link">View All</a>
+                    
+                  </div>
+                </div>
+              </div>
+  
+            </div>
+  <!-- main content ends -->
+      
+    </div>
+    </div>
+   
+</body>
+</html>
