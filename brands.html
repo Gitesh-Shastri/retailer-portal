@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+  
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./brands.css">
+</head>
+<body class="container" style="padding-top: 1%; padding-bottom: 1%;">
+    <div class="row">
+        <!-- list of brands -->
+        <div class="col-lg-5 col-sm-5 col-md-5 col-xs-5">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-subtitle" style="font-weight: bolder;">Top 5 Selling brands</h5>
+                    <table class="table  text-nowrap table-borderless" >
+                        <thead>
+                            <tr style="text-align: center; ">
+                                <th>Rank</th>
+                                <th>Product Name</th>
+                                <th>Number of units sold</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="text-align: center;">
+                                <td>1</td>
+                                <td>3M</td>
+                                <td>23451</td>
+                            </tr>
+                            <tr style="text-align: center;">
+                                <td>1</td>
+                                <td>3M</td>
+                                <td>23451</td>
+                            </tr>
+                            <tr style="text-align: center;">
+                                <td>1</td>
+                                <td>3M</td>
+                                <td>23451</td>
+                            </tr>
+                            <tr style="text-align: center;">
+                                <td>1</td>
+                                <td>3M</td>
+                                <td>23451</td>
+                            </tr>
+                            <tr style="text-align: center;">
+                                <td>1</td>
+                                <td>3M</td>
+                                <td>23451</td>
+                            </tr>
+                            <tr style="text-align: center;">
+                                <td>1</td>
+                                <td>3M</td>
+                                <td>23451</td>
+                            </tr>
+                            <tr style="text-align: center;">
+                                <td>1</td>
+                                <td>3M</td>
+                                <td>23451</td>
+                            </tr>
+                            <tr style="text-align: center;">
+                                <td>1</td>
+                                <td>3M</td>
+                                <td>23451</td>
+                            </tr>
+                            <tr style="text-align: center;">
+                                <td>1</td>
+                                <td>3M</td>
+                                <td>23451</td>
+                            </tr>
+                            <tr style="text-align: center;">
+                                <td>1</td>
+                                <td>3M</td>
+                                <td>23451</td>
+                            </tr>
+                            <tr style="text-align: center;">
+                                <td>1</td>
+                                <td>3M</td>
+                                <td>23451</td>
+                            </tr>
+                            <tr style="text-align: center;">
+                                <td>1</td>
+                                <td>3M</td>
+                                <td>23451</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+        <!-- right portion of page -->
+        <div class="col-lg-7 col-sm-7 col-xs-7 col-md-7">
+            <div class="row">
+            <!--card for bar-charts -->
+                <div class="col-lg-12 col-sm-12 col-xs-12 col-md-12" >
+                    <div class="card">
+                        <div class="card-body" style="max-height: 50%;">
+                            <div class="card-subtitle" style="font-weight: bolder;">Cipla</div>
+                            <div class="chart-container" >
+                                <canvas id="myChart" ></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- charts ends -->
+
+            <!-- list of medicines of clicked brand -->
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 col-xs-12 col-md-12" style="padding-top: 10px;">
+                <div class="card" >
+                    <div class="card-body">
+                        <h4 class="card-subtitle">Medicines of this brand:</h4>
+                        <table class="table text-nowrap table-borderless">
+                            <thead>
+                                <tr style="text-align: center;">
+                                    <th scope="col">Name</th>
+                                    <th scope="col"></th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Monthly consumption</th>
+                                </tr>
+                            </thead>
+                                <tr style="text-align: center;">
+                                    <td>Dolo-650</td>
+                                    <td>Pharma</td>
+                                    <td>Rs.25</td>
+                                    <td>120</td>
+                                </tr>
+                                <tr style="text-align: center;">
+                                    <td>Dolo-650</td>
+                                    <td>Pharma</td>
+                                    <td>Rs.25</td>
+                                    <td>120</td>
+                                </tr>
+                                <tr style="text-align: center;">
+                                    <td>Dolo-650</td>
+                                    <td>Pharma</td>
+                                    <td>Rs.25</td>
+                                    <td>120</td>
+                                </tr>
+                               
+                        </table>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- Chart code -->
+    <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Jan', 'Feb', 'March', 'April', 'May', 'June','July','Aug','Sept','Oct','Nov','Dec'],
+                datasets: [{
+                    label: 'No. of units sold monthly',
+                    data: [12, 19, 3, 5, 2, 3,12,23,34,12,65,15],
+                    backgroundColor: [
+                      "green",  "green",  "green",  "green",  "green",  "green",  "green",  "green",  "green",  "green",  "green",  "green"
+                        
+                    ],
+                    borderColor: [
+                        
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        gridLines: {
+                        offsetGridLines: true
+                    }
+                    }]
+                }
+            }
+        });
+        </script>
+</body>
+</html>
