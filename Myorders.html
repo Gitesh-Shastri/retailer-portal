@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+  <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js" ></script>
+</head>
+<body class="container" style="padding-top: 1%;">
+   <div class="container">
+    <div class="row">
+        <!-- Table card -->
+        <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+            <div class="card" style="box-shadow: 0px 10px 5px #aaaaaa;">
+                <div class="card-body">
+                    <h4 class="card-title">Your Orders</h4>
+                    <table class="table table-borderless table-striped table-hover" id="Mytable">
+                        <thead>
+                            <tr>
+                                <th >Order ID</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                                <th>Product</th>
+                                <th>Amount</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> <br> #14213</td>                                                                    
+                                <td> <br> 12/1/2013</td>
+                                <th> <br> Dispatched</th>
+                                <td>Dolo-650 <br>
+                                    Crocin <br>
+                                    Gelusil <br>
+                                </td>                                    
+                                <td> <br> Rs. 25000</td>
+                                <td> <br>
+                                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal">View Details</button>
+                                    <button type="button" class="btn btn-outline-danger">Reorder</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> <br> #14213</td>                                                                    
+                                <td> <br> 12/1/2013</td>
+                                <th> <br> Dispatched</th>
+                                <td>Dolo-650 <br>
+                                    Crocin <br>
+                                    Gelusil <br>
+                                </td>                                    
+                                <td> <br> Rs. 25000</td>
+                                <td> <br>
+                                    <button type="button" class="btn btn-danger">View Details</button>
+                                    <button type="button" class="btn btn-outline-danger">Reorder</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> <br> #14213</td>                                                                    
+                                <td> <br> 12/1/2013</td>
+                                <th> <br> Dispatched</th>
+                                <td>Dolo-650 <br>
+                                    Crocin <br>
+                                    Gelusil <br>
+                                </td>                                    
+                                <td> <br> Rs. 25000</td>
+                                <td> <br>
+                                    <button type="button" class="btn btn-danger">View Details</button>
+                                    <button type="button" class="btn btn-outline-danger">Reorder</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> <br> #14213</td>                                                                    
+                                <td> <br> 12/1/2013</td>
+                                <th> <br> Dispatched</th>
+                                <td>Dolo-650 <br>
+                                    Crocin <br>
+                                    Gelusil <br>
+                                </td>                                    
+                                <td> <br> Rs. 25000</td>
+                                <td> <br>
+                                    <button type="button" class="btn btn-danger">View Details</button>
+                                    <button type="button" class="btn btn-outline-danger">Reorder</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> <br> #14213</td>                                                                    
+                                <td> <br> 12/1/2013</td>
+                                <th> <br> Dispatched</th>
+                                <td>Dolo-650 <br>
+                                    Crocin <br>
+                                    Gelusil <br>
+                                </td>                                    
+                                <td> <br> Rs. 25000</td>
+                                <td> <br>
+                                    <button type="button" class="btn btn-danger">View Details</button>
+                                    <button type="button" class="btn btn-outline-danger">Reorder</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> <br> #14213</td>                                                                    
+                                <td> <br> 12/1/2013</td>
+                                <th> <br> Dispatched</th>
+                                <td>Dolo-650 <br>
+                                    Crocin <br>
+                                    Gelusil <br>
+                                </td>                                    
+                                <td> <br> Rs. 25000</td>
+                                <td> <br>
+                                    <button type="button" class="btn btn-danger">View Details</button>
+                                    <button type="button" class="btn btn-outline-danger">Reorder</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> <br> #14213</td>                                                                    
+                                <td> <br> 12/1/2013</td>
+                                <th> <br> Dispatched</th>
+                                <td>Dolo-650 <br>
+                                    Crocin <br>
+                                    Gelusil <br>
+                                </td>                                    
+                                <td> <br> Rs. 25000</td>
+                                <td> <br>
+                                    <button type="button" class="btn btn-danger">View Details</button>
+                                    <button type="button" class="btn btn-outline-danger">Reorder</button>
+                                </td>
+                            </tr>
+                            
+                           
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+    <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-dialog-centered">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+            <h4 class="modal-title">order Id: #23412</h4> 
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+           
+        </div>
+        <div class="modal-body">
+          <div class="row">
+              <div class="col-lg-12">
+                  <table class="table table-striped ">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Quantity</th>
+                                <th>Rate</th>
+                                <th>Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>dolo</td>
+                                <td>23</td>
+                                <td>2.5</td>
+                                <td>1200</td>
+                            </tr>
+                            <tr>
+                                <td>dolo</td>
+                                <td>23</td>
+                                <td>2.5</td>
+                                <td>1200</td>
+                            </tr>
+                            <tr>
+                                <td>dolo</td>
+                                <td>23</td>
+                                <td>2.5</td>
+                                <td>1200</td>
+                            </tr>
+                            <tr>
+                                <td>dolo</td>
+                                <td>23</td>
+                                <td>2.5</td>
+                                <td>1200</td>
+                            </tr>
+                        </tbody>
+                  </table>
+              </div>
+          </div>
+        </div>
+       <div class="modal-footer">
+        <p style="padding-right: 75%;">Subtotal:</p>
+        <p style="padding-right: 75%;">Delivery Fees:</p>
+        <p style="padding-right: 75%;">Grand total:</p>
+        <button type="button" class="btn btn-danger" data-dismiss="modal" >&times; Cancel Order</button>
+        <button type="button" class="btn btn-success" data-dismiss="modal" >Reorder</button>
+       </div>
+      </div>
+      
+    </div>
+  </div>
+  
+ <script>
+     $(document).ready(function() {
+    $('#Mytable').DataTable( {
+        "lengthMenu": [[5, 10,-1], [5,10, "All"]]
+    } );
+} );
+ </script>
+</body>
+</html>
